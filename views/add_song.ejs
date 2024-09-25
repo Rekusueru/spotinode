@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Themed Song Upload</title>
+    <link rel="stylesheet" href="../css/CRUD_style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Upload Your Song</h2>
+        <form action="/save" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="song">Upload Song:</label>
+                <input type="file" id="song" name="song">
+            </div>
+            <div class="form-group">
+                <label for="song_img">Thumbnail:</label>
+                <input type="file" id="song_img" name="song_img">
+            </div>
+            <div class="form-group">
+                <label for="song_name">Song Name:</label>
+                <input type="text" id="song_name" name="song_name">
+            </div>
+            <div class="form-group">
+                <label for="song_artist">Artist:</label>
+                <input type="text" id="song_artist" name="song_artist">
+            </div>
+            <div class="form-group">
+                <label for="song_genre">Genre:</label>
+                <input type="text" id="song_genre" name="song_genre">
+            </div>
+            <div class="form-group">
+                <label for="song_duration">Duration:</label>
+                <input type="text" id="song_duration" name="song_duration">
+            </div>
+            <input type="submit" value="Add Song">
+        </form>
+    </div>
+</body>
+</html>
